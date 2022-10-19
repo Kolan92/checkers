@@ -9,7 +9,9 @@
  * ---------------------------------------------------------------
  */
 
-export type CheckersMsgCreatePostResponse = object;
+export interface CheckersMsgCreateGameResponse {
+  gameIndex?: string;
+}
 
 /**
  * Params defines the parameters for the module.
@@ -43,7 +45,7 @@ export interface CheckersQueryGetSystemInfoResponse {
  * QueryParamsResponse is response type for the Query/Params RPC method.
  */
 export interface CheckersQueryParamsResponse {
-  /** params holds all the parameters of this module. */
+  /** Params defines the parameters for the module. */
   params?: CheckersParams;
 }
 
